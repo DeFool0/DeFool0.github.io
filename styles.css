@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.entrance {
+    /* center .entrance-text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background: rgb(28, 31, 29);
+}
+
+.entranceText {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.redirectCardsContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    /* allign the items inside horizontally */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redirect-card {
+    height: 300px;
+    width: 200px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    /* x-offset y-offset strenght size color*/
+    box-shadow: 0px 5px 10px 5px #00000018;
+
+    /* center inside content, vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1em;
+}
+
+.lineSeparator {
+    height: 3px;
+    width: 95%;
+    background: #e0e0e0;
+    margin-left: 2.5%;
+    border-radius: 5px;
+}
+
+.mySections {
+    font-size: 1em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.projectsSection {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-radius: 20px;
+    background: white;
+
+    /* x-offset y-offset strenght size color*/
+    box-shadow: 0px 5px 10px 5px #00000018;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.projectsSection h1 {
+    padding-bottom: 30px;
+}
+
+.githubProjectsList {
+    list-style-type: none;
+}
+
+.githubProjectsList li {
+    padding-bottom: 10px;
+}
+
+.githubProjectsList li:last-child {
+    padding-bottom: 0;
+}
+
+.projectCard {
+    border-radius: 20px;
+    font-size: 1em;
+    background: white;
+    height: 50px;
+    
+    /* x-offset y-offset strenght size color*/
+    box-shadow: 0px 5px 10px 5px #00000018;
+
+    /* center inside content, vertically and horizontally */
+    display: flex;
+    align-items: center;
+
+    /* space content inside equally */
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contactSection {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-radius: 20px;
+    background: white;
+
+    /* x-offset y-offset strenght size color*/
+    box-shadow: 0px 5px 10px 5px #00000018;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
