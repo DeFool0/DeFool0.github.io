@@ -34,7 +34,8 @@ body {
     justify-content: space-evenly;
 }
 
-.redirect-card {
+/* find a way to make the h1 stay in the center while the p is in the bottom half */
+.redirectCard {
     height: 300px;
     width: 200px;
 
@@ -49,6 +50,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-direction: column;
+
+    /* add space between the itms vertically */
+    padding: 20px;
 
     font-size: 1em;
 }
@@ -120,6 +126,22 @@ body {
     padding-right: 20px;
 }
 
+.gamesSection {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    border-radius: 20px;
+    background: white;
+
+    /* x-offset y-offset strenght size color*/
+    box-shadow: 0px 5px 10px 5px #00000018;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .contactSection {
     padding-left: 30px;
     padding-right: 30px;
@@ -134,4 +156,10 @@ body {
 
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.footer {
+    height: 250px;
+    width: 100%;
+    background: rgb(28, 31, 29);
 }
