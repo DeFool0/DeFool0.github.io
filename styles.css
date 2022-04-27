@@ -1,165 +1,180 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
+@keyframes appearingEntranceText {
+  0% {
+    color: #ffffff00;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
 .entrance {
-    /* center .entrance-text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    background: rgb(28, 31, 29);
+  /* center .entrance-text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #1c1f1d;
 }
 
-.entranceText {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    color: white;
+.entranceTextContainer {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff00;
+}
+
+.entranceText:nth-child(1) {
+  animation: appearingEntranceText 1s ease-in-out 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.entranceText:nth-child(2) {
+  animation: appearingEntranceText 1s ease-in-out 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.entranceText:nth-child(3) {
+  animation: appearingEntranceText 1s ease-in-out 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.entranceText:nth-child(4) {
+  animation: appearingEntranceText 1s ease-in-out 4s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.entranceText:nth-child(5) {
+  animation: appearingEntranceText 1s ease-in-out 5s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
 }
 
 .redirectCardsContainer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    
-    /* allign the items inside horizontally */
-    display: flex;
-    justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* allign the items inside horizontally */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* find a way to make the h1 stay in the center while the p is in the bottom half */
 .redirectCard {
-    height: 300px;
-    width: 200px;
-
-    background: white;
-
-    border-radius: 20px;
-
-    /* x-offset y-offset strenght size color*/
-    box-shadow: 0px 5px 10px 5px #00000018;
-
-    /* center inside content, vertically and horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: column;
-
-    /* add space between the itms vertically */
-    padding: 20px;
-
-    font-size: 1em;
+  height: 300px;
+  width: 200px;
+  background: white;
+  border-radius: 20px;
+  /* x-offset y-offset strenght size color*/
+  box-shadow: 0px 5px 10px 5px #00000018;
+  /* center inside content, vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* add space between the itms vertically */
+  padding: 20px;
+  font-size: 1em;
 }
 
 .lineSeparator {
-    height: 3px;
-    width: 95%;
-    background: #e0e0e0;
-    margin-left: 2.5%;
-    border-radius: 5px;
+  height: 3px;
+  width: 95%;
+  background: #e0e0e0;
+  margin-left: 2.5%;
+  border-radius: 5px;
 }
 
 .mySections {
-    font-size: 1em;
-    padding-left: 30px;
-    padding-right: 30px;
+  font-size: 1em;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .projectsSection {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    border-radius: 20px;
-    background: white;
-
-    /* x-offset y-offset strenght size color*/
-    box-shadow: 0px 5px 10px 5px #00000018;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  background: white;
+  /* x-offset y-offset strenght size color*/
+  box-shadow: 0px 5px 10px 5px #00000018;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
 .projectsSection h1 {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .githubProjectsList {
-    list-style-type: none;
+  list-style-type: none;
 }
-
 .githubProjectsList li {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
-
 .githubProjectsList li:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .projectCard {
-    border-radius: 20px;
-    font-size: 1em;
-    background: white;
-    height: 50px;
-    
-    /* x-offset y-offset strenght size color*/
-    box-shadow: 0px 5px 10px 5px #00000018;
-
-    /* center inside content, vertically and horizontally */
-    display: flex;
-    align-items: center;
-
-    /* space content inside equally */
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding-left: 20px;
-    padding-right: 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  background: white;
+  height: 50px;
+  /* x-offset y-offset strenght size color*/
+  box-shadow: 0px 5px 10px 5px #00000018;
+  /* center inside content, vertically and horizontally */
+  display: flex;
+  align-items: center;
+  /* space content inside equally */
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .gamesSection {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    border-radius: 20px;
-    background: white;
-
-    /* x-offset y-offset strenght size color*/
-    box-shadow: 0px 5px 10px 5px #00000018;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  background: white;
+  /* x-offset y-offset strenght size color*/
+  box-shadow: 0px 5px 10px 5px #00000018;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .contactSection {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    border-radius: 20px;
-    background: white;
-
-    /* x-offset y-offset strenght size color*/
-    box-shadow: 0px 5px 10px 5px #00000018;
-
-    margin-top: 30px;
-    margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  background: white;
+  /* x-offset y-offset strenght size color*/
+  box-shadow: 0px 5px 10px 5px #00000018;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .footer {
-    height: 250px;
-    width: 100%;
-    background: rgb(28, 31, 29);
+  height: 250px;
+  width: 100%;
+  background: #1c1f1d;
 }
+
+/*# sourceMappingURL=styles.css.map */
