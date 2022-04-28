@@ -9,15 +9,29 @@ body
 @keyframes appearingEntranceText
     0%
         color: #ffffff00
-
     100%
         color: #ffffff
+
+@keyframes appearingEntranceSvg
+    0%
+        opacity: 0%
+    100%
+        opacity: 100%
+
+@keyframes bobUpDownArrowSvg
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(10px)
+    100%
+        transform: translateY(0)
 
 .entrance
     /* center .entrance-text vertically */
     display: flex
     justify-content: center
     align-items: center
+    flex-direction: column
     height: 100vh
 
     background: rgb(28, 31, 29)
@@ -33,6 +47,25 @@ body
         animation: appearingEntranceText 1s ease-in-out #{$i}s
         animation-delay: #{$i - 1}s
         animation-fill-mode: forwards
+
+.entranceArrowDownSvg
+    color: white
+    opacity: 0%
+
+    animation: appearingEntranceSvg 1s ease-in-out 4s
+    animation-delay: 5s
+    animation-fill-mode: forwards
+
+    width: 50px
+    height: 50px
+
+.arrowSvgContainer
+    animation: bobUpDownArrowSvg 1s ease-in-out infinite
+    animation-delay: 0s
+    animation-fill-mode: forwards
+
+    bottom: 50px
+    position: absolute
 
 .redirectCardsContainer
     padding-top: 50px
